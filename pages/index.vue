@@ -1,5 +1,5 @@
 <template>
-  <Form />
+  <Layout />
 </template>
 
 <script lang="ts">
