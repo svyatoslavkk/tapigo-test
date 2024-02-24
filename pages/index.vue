@@ -1,5 +1,5 @@
 <template>
-  <Layout />
+  <Article />
 </template>
 
 <script lang="ts">
