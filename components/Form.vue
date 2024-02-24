@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="flex items-center justify-center min-w-full h-screen bg-red-300 p-6">
     <form class="w-full max-w-lg">
       <div class="flex flex-wrap mb-3">
         <div class="w-full md:w-1/3 px-3">
@@ -110,15 +110,5 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 100%;
-  height: 100vh;
-  background-color: rgb(246, 153, 153);
-  padding: 1.5rem;
 }
 </style>

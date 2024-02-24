@@ -1,5 +1,11 @@
 export const items = [
   {
+    image: "https://s3-alpha-sig.figma.com/img/2a9b/420b/96a0721535a205dd442961e21d77245c?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iWu1Z90RTTeWdq9wxZR6DNjspYT7Y8pATFcFjOsG1CpQGVw7tF9nscZ5Qg7Kv9uYps95n6bVhVnJTt1CuIPvhqzkUHlKjl-I-Q1Jo~WGwzL4BF0ddV2TQwY22ruRpScvB6bHUd0r59-LgKdya3edN81n8JKAp2qsXcygi~RS0R67PI1OnurMrgBZJNVXsTgROmYA7j4HbG8Adv~YOBPx8aiN8~qjyi8DsQkK2fclEkqqv7tP~NvowItcqb6ORFyBYxQonJ3faw5pMYYxFTjyVzEsaFJ5fZs92VsFi~FN1cRpPo9KwDzO~oEHUon6uV5KIOjbyx83z4CRzpyzCSX3Jw__",
+    header: "We do campaigns that works well for your idea",
+    description: "Our documentary campaigns feature leading figures, organisations and leaders, in open and candid discussions about transformative strategies and mindsets. Addressing complex trends.",
+    buttonText: "All campaigns",
+  },
+  {
     image: "https://s3-alpha-sig.figma.com/img/4f55/6a8d/13673e86798bcb7769fd2b8e43d59d00?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VhC5opmKjhSZ9nF8jIsS61NBfK~D4MCaAwTVsNZ2zQATtT-iFmbq-tsx4wnUrAKY4WLax1RfvX1l0uyxzzu7FtIaFs6ifzYoP-AWO-LzXLkiVOmHJ2Cl0O1Ok9ghtEXUnjEzu~Ba7Zrwcu69LKT6JCynT1sAK8-Gc~ccX2dqmg-y1OGMezl0jt909tkmv1ifkInbf2QFI32srFejNAgSU7IidZvBwpQWiH7aEo4NIZ1EZrhGCh9rxAYo79s4zVfoFS7z0KMGgkTzYuxk5XXPEvOH1XhnDM2Ff32rtOHYNyjJDwiyHNmygjQ7exsENyxZVDvKQEshXsU3OA6W-QcUSA__",
     header: "We make films that stick in your heart",
     description: "This exclusive service provided by our team of professional content creators is available for global use. Our clients will have access and total creative control throughout the process of production, with resources and talent supplied by us.",

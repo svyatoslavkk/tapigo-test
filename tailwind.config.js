@@ -6,6 +6,11 @@ module.exports = {
         'custom-color-1F293E': '#1F293E',
         'custom-color-6366F1': '#6366F1',
       },
+      padding: {
+        '48px': '48px',
+        '60px': '60px',
+        '144px': '144px',
+      },
     },
   },
 }
