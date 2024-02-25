@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="main">
+    <article class="main">
       <div class="pre-header">
         <div class="path">
           <button class="gray-text">Журнал</button>
@@ -16,7 +16,7 @@
         <img class="art-img" :src="openImage" />
         <h2>{{ articleTitle }}</h2>
         <div class="quotes-block">
-          <p class="quotes">{{ articleQuotes }}</p>
+          <p>{{ articleQuotes }}</p>
           <span>{{ articleQuotesAuthor }}</span>
         </div>
         <div v-for="(item, index) in articles" :key="index" class="article">
@@ -32,9 +32,9 @@
             </div>
           </div>
         </div>
-        <p class="footer-text">Автор: <button class="link">Журнал Тапиго</button></p>
+        <footer class="footer-text">Автор: <button>Журнал Тапиго</button></footer>
       </div>
-    </div>
+    </article>
   </div>
 </template>
 
@@ -73,14 +73,15 @@ export default {
     gap: 0.5rem;
     width: 80%;
   }
-  .quotes {
+  .quotes-block p {
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
   }
   .path {
     display: flex;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
     font-size: 15px;
   }
   .content {
@@ -91,18 +92,6 @@ export default {
     gap: 32px;
     max-width: 950px;
   }
-  .footer-text {
-    color: #c2c2c7;
-    font-style: italic;
-    font-size: 13px;
-  }
-  .link {
-    font-style: italic;
-    font-size: 13px;
-    color: #008afe;
-    text-decoration: underline;
-    transition: 0.3s ease;
-  }
   .link:hover {
     color: #000;
   }
@@ -112,10 +101,12 @@ export default {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    width: 100%;
   }
   .art-img {
     border-radius: 8px;
     max-width: 950px;
+    width: 100%;
   }
   .description {
     color: #c2c2c7;
@@ -165,5 +156,17 @@ export default {
   .default-text {
     font-size: 14px;
     color: #000;
+  }
+  .footer-text {
+    color: #c2c2c7;
+    font-style: italic;
+    font-size: 13px;
+  }
+  .footer-text button {
+    font-style: italic;
+    font-size: 13px;
+    color: #008afe;
+    text-decoration: underline;
+    transition: 0.3s ease;
   }
 </style>

@@ -1,0 +1,3 @@
+<template>
+  <svg viewBox="0 0 17.00 17.00" version="1.1" width="48" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#aaaaaa" stroke="#aaaaaa" stroke-width="0.00017"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.354 5.075l-7.855 7.854-7.853-7.854 0.707-0.707 7.145 7.146 7.148-7.147 0.708 0.708z" fill="#aaaaaa"></path> </g></svg>
+</template>
