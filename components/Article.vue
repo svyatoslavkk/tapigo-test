@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <article class="main">
+    <article class="column-center main">
       <div class="pre-header">
         <div class="path">
           <button class="gray-text">Журнал</button>
@@ -12,16 +12,16 @@
         </div>
         <div></div>
       </div>
-      <div class="content">
-        <img class="art-img" :src="openImage" />
+      <div class="column-center content">
+        <img class="img" :src="openImage" />
         <h2>{{ articleTitle }}</h2>
-        <div class="quotes-block">
+        <div class="column-center quotes-block">
           <p>{{ articleQuotes }}</p>
           <span>{{ articleQuotesAuthor }}</span>
         </div>
-        <div v-for="(item, index) in articles" :key="index" class="article">
-          <div class="img" :style="{ maxWidth: item.imageWidth + 'px' }">
-            <img v-if="item.image" class="art-img" :src="item.image" />
+        <div v-for="(item, index) in articles" :key="index" class="column-center article">
+          <div class="column-center img-block" :style="{ maxWidth: item.imageWidth + 'px' }">
+            <img v-if="item.image" class="img" :src="item.image" />
             <span v-if="item.description" class="description">{{ item.description }}</span>
           </div>
           <div class="article-content">
@@ -58,7 +58,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   h2 {
     font-size: 34px;
     font-weight: 700;
@@ -66,9 +66,36 @@ export default {
   button {
     cursor: pointer;
   }
-  .quotes-block {
+  .column-center {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content, .pre-header, .img {
+    max-width: 950px;
+  }
+  .paragraphs, .article {
+    max-width: 825px;
+  }
+  .footer-text, .footer-text button, .default-text, .gray-text, .description {
+    font-size: 13px;
+  }
+  .main {
+    gap: 32px;
+    padding: 75px 16px 105px 16px;
+    margin: 0;
+  }
+  .pre-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content {
+    gap: 32px;
+  }
+  .quotes-block {
     text-align: center;
     gap: 0.5rem;
     width: 80%;
@@ -78,74 +105,34 @@ export default {
     font-weight: 500;
     font-style: italic;
   }
+  .article {
+    gap: 40px;
+  }
   .path {
     display: flex;
     flex-wrap: wrap;
     column-gap: 0.5rem;
-    font-size: 15px;
   }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    max-width: 950px;
-  }
-  .link:hover {
-    color: #000;
-  }
-  .img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .img-block {
     gap: 8px;
     width: 100%;
   }
-  .art-img {
+  .img {
     border-radius: 8px;
-    max-width: 950px;
     width: 100%;
   }
   .description {
     color: #c2c2c7;
     font-style: italic;
-    font-size: 13px;
     width: 70%;
     text-align: center;
   }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    padding: 75px 16px 105px 16px;
-    margin: 0;
-  }
-  .article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    max-width: 825px;
-  }
   .paragraphs {
-    max-width: 825px;
     display: flex;
     flex-direction: column;
     gap: 48px;
   }
-  .pre-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 950px;
-    width: 100%;
-  }
   .gray-text {
-    font-size: 14px;
     color: #6a7280;
   }
   .gray-text:hover,
@@ -154,19 +141,19 @@ export default {
     color: #000;
   }
   .default-text {
-    font-size: 14px;
     color: #000;
   }
   .footer-text {
     color: #c2c2c7;
     font-style: italic;
-    font-size: 13px;
   }
   .footer-text button {
     font-style: italic;
-    font-size: 13px;
     color: #008afe;
     text-decoration: underline;
     transition: 0.3s ease;
+  }
+  .footer-text button:hover {
+    color: #000;
   }
 </style>
